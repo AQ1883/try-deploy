@@ -2,6 +2,7 @@ import CarouselWithContent from "./CS1/Carousel";
 import Content2 from "./CS2/Content2";
 import { motion } from "framer-motion";
 import Content3 from "./CS3/Content3";
+import Content4 from "./CS4/Content4";
 
 function Screens() {
   return (
@@ -24,6 +25,10 @@ function Screens() {
       <div id="screen3" className="h-screen bg-black">
         
         <Content3 />
+      </div>
+      <div className="h-screen bg-black pt-40">
+        
+        <Content4 />
       </div>
       
     </>
