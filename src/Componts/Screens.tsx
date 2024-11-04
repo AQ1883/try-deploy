@@ -3,6 +3,7 @@ import Content2 from "./CS2/Content2";
 import { motion } from "framer-motion";
 import Content3 from "./CS3/Content3";
 import Content4 from "./CS4/Content4";
+import Downbar from "./Downbar";
 
 function Screens() {
   return (
@@ -30,6 +31,15 @@ function Screens() {
         
         <Content4 />
       </div>
+
+  <hr />
+  <div className="bg-black">
+    <Downbar />
+  </div>
+        
+    
+
+      
       
     </>
   );
