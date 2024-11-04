@@ -81,7 +81,7 @@ function Downbar() {
                 whileInView={{ opacity: 1, y: 0 }} // الحركة تحدث عندما يكون العنصر في مجال الرؤية
                 transition={{ duration: 1 }}
                 viewport={{ once: false }}
-                  className="rounded-md w-80 py-2 px-4 text-center text-2xl transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:bg-slate-800 hover:border-slate-800 focus:text-white focus:bg-slate-800 focus:border-slate-800 active:border-slate-800 active:text-white active:bg-slate-800 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                  className="rounded-md w-80 py-2 px-4 text-center text-2xl transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:border-slate-800 focus:text-white  focus:border-slate-800  active:text-white disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                   type="button"
                 >
                   Who we are 
@@ -91,7 +91,7 @@ function Downbar() {
                 whileInView={{ opacity: 1, y: 0 }} // الحركة تحدث عندما يكون العنصر في مجال الرؤية
                 transition={{ duration: 1 }}
                 viewport={{ once: false }}
-                  className="rounded-md w-80 py-2 px-4 text-center text-2xl transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:bg-slate-800 hover:border-slate-800 focus:text-white focus:bg-slate-800 focus:border-slate-800 active:border-slate-800 active:text-white active:bg-slate-800 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                  className="rounded-md w-80 py-2 px-4 text-center text-2xl transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:border-slate-800 focus:text-white  focus:border-slate-800  active:text-white disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                   type="button"
                 >
                   What we Do
@@ -101,7 +101,7 @@ function Downbar() {
                 whileInView={{ opacity: 1, y: 0 }} // الحركة تحدث عندما يكون العنصر في مجال الرؤية
                 transition={{ duration: 1 }}
                 viewport={{ once: false }}
-                  className="rounded-md w-80 py-2 px-4 text-center text-2xl transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:bg-slate-800 hover:border-slate-800 focus:text-white focus:bg-slate-800 focus:border-slate-800 active:border-slate-800 active:text-white active:bg-slate-800 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                  className="rounded-md w-80 py-2 px-4 text-center text-2xl transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:border-slate-800 focus:text-white  focus:border-slate-800  active:text-white disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                   type="button"
                 >
                   Contact Us
