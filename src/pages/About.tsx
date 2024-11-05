@@ -1,8 +1,15 @@
+import { div } from 'framer-motion/client'
 import React from 'react'
+import Abouts1 from '../Componts/About-s1'
 
 function About() {
   return (
-    <div className='text-7xl'>her page apout!</div>
+    <>
+    <div className='h-screen'>
+      <Abouts1/>
+    </div>
+    
+    </>
   )
 }
 

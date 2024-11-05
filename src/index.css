@@ -12,3 +12,17 @@
 }
 
 
+
+#stroke{
+    color: transparent;
+    -webkit-text-stroke: white 3px;
+}
+
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid #ffffff; /* السهم باللون الأسود */
+  }

@@ -11,15 +11,21 @@
   },
   "dependencies": {
     "@material-tailwind/react": "^2.1.10",
+    "@mui/material": "^6.1.6",
+    "@mui/styled-engine-sc": "^6.1.6",
     "@react-spring/web": "^9.7.5",
     "aos": "^2.3.4",
     "font-awesome": "^4.7.0",
     "framer-motion": "^11.11.10",
+    "localforage": "^1.10.0",
+    "match-sorter": "^8.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-infinite-logo-slider": "^1.1.4",
     "react-intersection-observer": "^9.13.1",
-    "react-router-dom": "^6.27.0"
+    "react-router-dom": "^6.27.0",
+    "sort-by": "^1.2.0",
+    "styled-components": "^6.1.13"
   },
   "devDependencies": {
     "@eslint/js": "^9.13.0",

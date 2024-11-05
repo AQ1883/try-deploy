@@ -4,10 +4,16 @@ import { motion } from "framer-motion";
 import Content3 from "./CS3/Content3";
 import Content4 from "./CS4/Content4";
 import Downbar from "./Downbar";
+import { Navbar } from "@material-tailwind/react";
+import Navpart from "./Navpar";
+
+
+
 
 function Screens() {
   return (
     <>
+            <Navpart/>
       <div className="h-screen">
         <CarouselWithContent />
       </div>
