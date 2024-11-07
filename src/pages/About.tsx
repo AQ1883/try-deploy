@@ -6,15 +6,10 @@ import Abouts4 from "../Componts/abouts4";
 function About() {
   return (
     <>
-      <div className="h-screen">
-        <Abouts1 />
-      </div>
-      <div className="bg-black ">
-        <Abouts2 />
-        <Abouts3 />
+      
 
         <Abouts4 />
-      </div>
+     
     </>
   );
 }
