@@ -5,6 +5,8 @@ import { useEffect } from "react";
 import Screens from "./Componts/Screens";
 
 
+
+
 function App() {
   useEffect(() => {
     AOS.init({});
@@ -12,8 +14,12 @@ function App() {
 
   return (
     <>
-    
+     
       <Screens />
+   
+      
+    
+      
     </>
   );
 }

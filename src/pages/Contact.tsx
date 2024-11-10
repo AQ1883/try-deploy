@@ -1,78 +1,51 @@
-import { div } from "framer-motion/client";
-import React from "react";
-
-import {
-  Card,
-  Input,
-  Checkbox,
-  Button,
-  Typography,
-} from "@material-tailwind/react";
+import { Button, Input, Navbar, Textarea } from "@material-tailwind/react";
+import { motion } from "framer-motion";
+import Navpart from "../Componts/Navpar";
 
 function Contact() {
   return (
     <>
-      <div className="h-screen bg-black">
-        <div className="container mx-auto ">
-          <div className="text-center h-screen flex justify-center items-center">
-            <h1 id="stroke" className="">
-              Connect
-            </h1>
-            <div className="h-screen flex justify-center items-center">
-              <h1>Get in touch.</h1>
-              <Card color="transparent" shadow={false}>
-                <Typography variant="h4" color="white">
-                  Sign Up
-                </Typography>
-                <Typography color="gray" className="mt-1 font-normal">
-                  Nice to meet you! Enter your details to register.
-                </Typography>
-                <form className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96">
-                  <div className="mb-1 flex flex-col gap-6">
-                  <Typography variant="h6" color="white" className="-mb-3">
-                      Your Name
-                    </Typography>
-                    <Input
-                    placeholder="Ahmed mohammed"
-                      color="black"
-                      size="lg"
-                      className=" focus:!border-t-gray-900"
-                      labelProps={{
-                        className: "before:content-none after:content-none text-white",
-                      }}
-                    />
-                    
-                    
-                    <Typography variant="h6" color="white" className="-mb-3">
-                      Your Email
-                    </Typography>
-                    <Input
-                      color="black"
-                      size="lg"
-                      placeholder="name@mail.com"
-                      className=" focus:!border-t-gray-900"
-                      labelProps={{
-                        className: "before:content-none after:content-none",
-                      }}
-                    />
-                    <Typography variant="h6" color="white" className="-mb-3">
-                      Your Company
-                    </Typography>
-                    <Input
-                      color="black"
-                      size="lg"
-                      className=" focus:!border-t-gray-900"
-                      labelProps={{
-                        className: "before:content-none after:content-none",
-                      }}
-                    />
-                  </div>
-
-                  <Button className="mt-6" fullWidth>
-                    Send
-                  </Button>
-                </form>
-              </Card>
+    <Navpart/>
+      <div className="bg-black h-screen">
+        <div className="container mx-auto">
+          <motion.div
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: false }}
+            className="flex justify-center items-center text-white h-[80vh]"
+            id="stroke2"
+          >
+            CONN<span>E</span>CT
+          </motion.div>
+        </div>
+        <div className="h-screen bg-black flex items-center">
+          <div className="container mx-auto text-white">
+            <div className="flex justify-between">
+              <h1 id="stroke2" className="w-1/2">
+                Get<span> in </span>touch.
+              </h1>
+              <div className="flex  flex-col gap-6 w-1/2">
+                <Input
+                  variant="standard"
+                  label="Your name"
+                  placeholder="Name"
+                />
+                <Input
+                  type="email"
+                  variant="standard"
+                  label="Email"
+                  placeholder="example@name-company.com"
+                />
+                <Input
+                  variant="standard"
+                  label="Your company"
+                  placeholder="Company name"
+                />
+                 <Textarea label="Message" variant="standard"/>
+                 <Button size="sm">Submit</Button>
+              
+              </div>
             </div>
           </div>
         </div>
