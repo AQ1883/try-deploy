@@ -9,41 +9,39 @@
   height: 100vh;
 }
 
-
 .scrollText {
   font-size: 1.5rem;
 }
 
 .card {
-  display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.25rem;
   width: 35%;
-  text-align: center;
-  border-radius: 10px;
-  flex-direction: column;
+  
+  
 }
 
 .parallax {
-  margin-right: 15%;
+  margin-right: 10%;
   /* إخفاء شريط التمرير مع السماح بالتمرير */
   overflow: scroll;
 }
 
 .parallax::-webkit-scrollbar {
-  display: none;  /* إخفاء شريط التمرير في المتصفحات التي تدعم WebKit (مثل Chrome و Safari) */
+  display: none; /* إخفاء شريط التمرير في المتصفحات التي تدعم WebKit (مثل Chrome و Safari) */
 }
 
 .parallax {
-  -ms-overflow-style: none;  /* إخفاء شريط التمرير في Internet Explorer 10+ */
-  scrollbar-width: none;  /* إخفاء شريط التمرير في Firefox */
+  -ms-overflow-style: none; /* إخفاء شريط التمرير في Internet Explorer 10+ */
+  scrollbar-width: none; /* إخفاء شريط التمرير في Firefox */
 }
 
 .sticky {
-  margin-left: 15%;
+  margin-left: 10%;
   color: white;
-  font-size: 8rem;
+  font-size: 6.5rem;
+  font-weight: 700;
 }
 
 .blue {
@@ -53,9 +51,17 @@
 
 .purple {
   color: white;
-  flex-direction: column;
-  background-color: palevioletred;
 }
+
+.purple h1 {
+  font-size: 6.5rem;
+  text-align: start;
+  font-weight: 700;
+  
+
+}
+
+
 
 @media (max-width: 750px) {
   .card {
