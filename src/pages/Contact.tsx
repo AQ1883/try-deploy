@@ -1,6 +1,7 @@
 import { Button, Input, Navbar, Textarea } from "@material-tailwind/react";
 import { motion } from "framer-motion";
 import Navpart from "../Componts/Navpar";
+import Downbar from "../Componts/Downbar";
 
 function Contact() {
   return (
@@ -22,10 +23,20 @@ function Contact() {
         <div className="h-screen bg-black flex items-center">
           <div className="container mx-auto text-white">
             <div className="flex justify-between">
-              <h1 id="stroke2" className="w-1/2">
+              <motion.h1
+              initial={{ y: 100, opacity: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
+              viewport={{ once: false }}
+               id="stroke2" className="w-1/2">
                 Get<span> in </span>touch.
-              </h1>
-              <div className="flex  flex-col gap-6 w-1/2">
+              </motion.h1>
+              <motion.div 
+              initial={{ y: 100, opacity: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
+              viewport={{ once: false }}
+              className="flex  flex-col gap-6 w-1/2">
                 <Input
                   variant="standard"
                   label="Your name"
@@ -45,10 +56,16 @@ function Contact() {
                  <Textarea label="Message" variant="standard"/>
                  <Button size="sm">Submit</Button>
               
-              </div>
+              </motion.div>
             </div>
           </div>
+          
         </div>
+        <hr />
+        <div className="bg-black">
+          <Downbar/>
+        </div>
+        
       </div>
     </>
   );

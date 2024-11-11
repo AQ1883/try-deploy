@@ -18,12 +18,12 @@ function Abouts1() {
            viewport={{ once: false }}
            className="w-3/4 text-center md:w-2/4">
             <Typography
-            id='stroke'
+            id='stroke2'
               variant="h1"
               color="white"
               className="mb-4 text-3xl md:text-4xl lg:text-9xl mt-40 tracking-widest"
             >
-              WE ARE
+              WE <span id='stroke2'>A</span>RE
             </Typography>
            
             
