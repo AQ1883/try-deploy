@@ -1,4 +1,3 @@
-import * as React from "react";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import styles from "../styles2.module.css";
 import Abouts1 from "./About-s1";

@@ -84,7 +84,8 @@ function Downbar() {
                   className="rounded-md w-80 py-2 px-4 text-center text-2xl transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:border-slate-800 focus:text-white  focus:border-slate-800  active:text-white disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                   type="button"
                 >
-                  Who we are 
+                  <a href="/About">Who we are </a>
+                  
                 </motion.button>
                 <motion.button
                 initial={{  opacity: 0 }}
@@ -94,7 +95,8 @@ function Downbar() {
                   className="rounded-md w-80 py-2 px-4 text-center text-2xl transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:border-slate-800 focus:text-white  focus:border-slate-800  active:text-white disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                   type="button"
                 >
-                  What we Do
+                  <a href="/Services">What we Do</a>
+                  
                 </motion.button>
                 <motion.button
                 initial={{  opacity: 0 }}
@@ -104,7 +106,8 @@ function Downbar() {
                   className="rounded-md w-80 py-2 px-4 text-center text-2xl transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:border-slate-800 focus:text-white  focus:border-slate-800  active:text-white disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                   type="button"
                 >
-                  Contact Us
+                  <a href="/Contact">Contact Us</a>
+                  
                 </motion.button>
               </div>
             </div>
