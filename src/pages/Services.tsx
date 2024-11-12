@@ -6,8 +6,9 @@ import Navpart from "../Componts/Navpar";
 import Serv1 from "../Componts/Serv1";
 import Serv2 from "../Componts/Serv2";
 import Serv3 from "../Componts/Serv3";
-import Downbar from "../Componts/Downbar";
+
 import Serv4 from "../Componts/Serv4";
+import Copyright from "../Componts/Copyright";
 
 export default function Services() {
   const alignCenter = { display: "flex", alignItems: "center" };
@@ -17,7 +18,7 @@ export default function Services() {
         {" "}
         {/* إضافة الكلاس هنا */}
         <div className={styles.background} />
-        <Parallax pages={19.3}>
+        <Parallax pages={19.35}>
           <Navpart />
           <ParallaxLayer
             offset={0}
@@ -25,6 +26,20 @@ export default function Services() {
             style={{ ...alignCenter, justifyContent: "center" }}
           >
             <Serv1 />
+          </ParallaxLayer>
+          <ParallaxLayer
+            sticky={{ start: 1, end: 19 }}
+            
+          >
+            <motion.div
+              initial={{ y: 100, opacity: 0 }}
+              whileInView={{ opacity: 1, y: 0 }} // الحركة تحدث عندما يكون العنصر في مجال الرؤية
+              transition={{ duration: 1 }}
+              viewport={{ once: false }}
+              className={`${styles.card} ${styles.sticky}`}
+            >
+              <div id="ArrowUp"><a href=""><i className="fa-solid fa-chevron-up"></i></a></div>
+            </motion.div>
           </ParallaxLayer>
           <ParallaxLayer
             offset={1}
@@ -398,7 +413,7 @@ export default function Services() {
             </div>
 
             <hr />
-            <Downbar />
+            <Copyright/>
           </ParallaxLayer>
         </Parallax>
       </div>
