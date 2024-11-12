@@ -1,4 +1,5 @@
 import { Carousel, Typography, Button } from "@material-tailwind/react";
+import { motion } from "framer-motion";
 
 export function CarouselWithContent() {
   return (
@@ -9,19 +10,27 @@ export function CarouselWithContent() {
           alt="image 1"
           className="h-full w-full object-cover"
         />
-        <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/75">
+        <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/55">
           <div className="w-3/4 text-center md:w-2/4">
             <Typography
               variant="h1"
               color="white"
               className="mb-4 text-3xl md:text-4xl lg:text-5xl"
             >
-              KARTNGO
+               <motion.div
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: false }}
+            id="stroke2"
+          >
+            Kart<span>N</span>Go
+          </motion.div>
             </Typography>
             <Typography
               variant="lead"
               color="white"
-              className="mb-12 opacity-80"
+              className="mb-12"
             >
               KartNGo store is a cutting-edge, self-service micro-market
               tailored for office settings. Employees can easily access a
@@ -46,19 +55,24 @@ export function CarouselWithContent() {
           alt="image 2"
           className="h-full w-full object-cover"
         />
-        <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/75">
+        <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/55">
           <div className="w-3/4 text-center md:w-2/4">
             <Typography
               variant="h1"
               color="white"
               className="mb-4 text-3xl md:text-4xl lg:text-5xl"
             >
-              KARTNGO
+               <div
+            
+            id="stroke2"
+          >
+            Kart<span>N</span>Go
+          </div>
             </Typography>
             <Typography
               variant="lead"
               color="white"
-              className="mb-12 opacity-80"
+              className="mb-12"
             >
               KartNGo store is a cutting-edge, self-service micro-market
               tailored for office settings. Employees can easily access a
@@ -83,19 +97,24 @@ export function CarouselWithContent() {
           alt="image 3"
           className="h-full w-full object-cover"
         />
-        <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/75">
+        <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/55">
           <div className="w-3/4 text-center md:w-2/4">
             <Typography
               variant="h1"
               color="white"
               className="mb-4 text-3xl md:text-4xl lg:text-5xl"
             >
-              KARTNGO
+               <div
+            
+            id="stroke2"
+          >
+            Kart<span>N</span>Go
+          </div>
             </Typography>
             <Typography
               variant="lead"
               color="white"
-              className="mb-12 opacity-80"
+              className="mb-12"
             >
               KartNGo store is a cutting-edge, self-service micro-market
               tailored for office settings. Employees can easily access a

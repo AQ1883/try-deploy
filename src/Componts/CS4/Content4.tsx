@@ -31,8 +31,8 @@ function Content4() {
                 </Typography>
               </CardBody>
               <CardFooter className="pt-0">
-                <Button className="m-1">Get it</Button>
-                <Button>Read More</Button>
+                <a href="/Contact"><Button className="m-1">Get it</Button></a>
+                <a href="/About"><Button>Read More</Button></a>
               </CardFooter>
             </Card>
             <Card color="transparent" className="mt-6 ease-in-out hover:bg-slate-950 duration-300">
@@ -48,8 +48,8 @@ function Content4() {
                 </Typography>
               </CardBody>
               <CardFooter className="pt-0">
-                <Button className="m-1">Get it</Button>
-                <Button>Read More</Button>
+              <a href="/Contact"><Button className="m-1">Get it</Button></a>
+              <a href="/About"><Button>Read More</Button></a>
               </CardFooter>
             </Card>
           </motion.div>

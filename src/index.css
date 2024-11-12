@@ -51,9 +51,9 @@
 
 
 #ArrowUp{
-    position: relative;
-    right: 0;
-    
+    position: sticky;
+    left: 93%;
+    bottom: 0%;
 }
 
 

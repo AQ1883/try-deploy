@@ -76,6 +76,17 @@ function Downbar() {
                 <i className="fab fa-x-twitter w-4 h-4" aria-hidden="true"></i>
               </button>
               <div className="flex gap-5 ml-40 ">
+              <motion.button
+                initial={{  opacity: 0 }}
+                whileInView={{ opacity: 1, y: 0 }} // الحركة تحدث عندما يكون العنصر في مجال الرؤية
+                transition={{ duration: 1 }}
+                viewport={{ once: false }}
+                  className="rounded-md w-80 py-2 px-4 text-center text-2xl transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:border-slate-800 focus:text-white  focus:border-slate-800  active:text-white disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                  type="button"
+                >
+                  <a href="/">Home</a>
+                  
+                </motion.button>
                 <motion.button
                 initial={{  opacity: 0 }}
                 whileInView={{ opacity: 1, y: 0 }} // الحركة تحدث عندما يكون العنصر في مجال الرؤية

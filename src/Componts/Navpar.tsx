@@ -10,6 +10,12 @@ function Navpart() {
         />
       </a>
       <nav className="navbar font-bold">
+      <a
+          className="text-center text-1xl transition-all shadow-sm hover:shadow-lg text-slate-100 hover:text-slate-500 hover:border-slate-800 focus:text-white  focus:border-slate-800  active:text-slate-500 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+          href="/"
+        >
+          Home
+        </a>
         <a
           className="text-center text-1xl transition-all shadow-sm hover:shadow-lg text-slate-100 hover:text-slate-500 hover:border-slate-800 focus:text-white  focus:border-slate-800  active:text-slate-500 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
           href="/About"
