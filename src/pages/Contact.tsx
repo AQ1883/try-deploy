@@ -1,4 +1,4 @@
-import { Button, Input, Navbar, Textarea } from "@material-tailwind/react";
+import { Button, Input, Textarea } from "@material-tailwind/react";
 import { motion } from "framer-motion";
 import Navpart from "../Componts/Navpar";
 import Downbar from "../Componts/Downbar";

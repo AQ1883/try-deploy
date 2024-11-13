@@ -1,4 +1,3 @@
-import React from 'react'
 import Downbar from './Downbar'
 
 function Copyright() {

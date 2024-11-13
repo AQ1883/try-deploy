@@ -2,9 +2,8 @@ import { useTrail, a } from "@react-spring/web";
 import { useState, useRef, useEffect } from "react";
 import styles from "../styles.module.css";
 import React from "react";
-import Downbar from "./Downbar";
 
-const Trail: React.FC<{ open: boolean }> = ({ open, children }) => {
+const Trail: React.FC<{ open: boolean,children: React.ReactNode }> = ({ open, children }) => {
   const items = React.Children.toArray(children);
   const trail = useTrail(items.length, {
     config: { mass: 5, tension: 2000, friction: 200 },
@@ -25,7 +24,6 @@ const Trail: React.FC<{ open: boolean }> = ({ open, children }) => {
 };
 
 function Abouts5() {
-    const alignCenter = { display: 'flex', alignItems: 'center' }
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
