@@ -18,7 +18,7 @@ export default function Services() {
         {" "}
         {/* إضافة الكلاس هنا */}
         <div className={styles.background} />
-        <Parallax pages={19.35}>
+        <Parallax pages={19.32}>
           
           <Navpart />
           <ParallaxLayer
