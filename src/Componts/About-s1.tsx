@@ -1,4 +1,4 @@
-import { Button, Typography } from '@material-tailwind/react'
+import { Typography } from '@material-tailwind/react'
 import { motion } from 'framer-motion'
 
 
