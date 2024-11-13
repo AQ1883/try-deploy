@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 function Navpart() {
@@ -10,31 +11,30 @@ function Navpart() {
         />
       </a>
       <nav className="navbar font-bold">
-      <a
-          className="text-center text-1xl transition-all shadow-sm hover:shadow-lg text-slate-100 hover:text-slate-500 hover:border-slate-800 focus:text-white  focus:border-slate-800  active:text-slate-500 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-          href="/"
+        <Link
+          to="/"
+          className="text-center text-1xl transition-all shadow-sm hover:shadow-lg text-slate-100 hover:text-slate-500 hover:border-slate-800 focus:text-white focus:border-slate-800 active:text-slate-500 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
         >
           Home
-        </a>
-        <a
-          className="text-center text-1xl transition-all shadow-sm hover:shadow-lg text-slate-100 hover:text-slate-500 hover:border-slate-800 focus:text-white  focus:border-slate-800  active:text-slate-500 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-          href="/About"
+        </Link>
+        <Link
+          to="/about"
+          className="text-center text-1xl transition-all shadow-sm hover:shadow-lg text-slate-100 hover:text-slate-500 hover:border-slate-800 focus:text-white focus:border-slate-800 active:text-slate-500 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
         >
           How We Are
-        </a>
-        <a
-          className="text-center text-1xl transition-all shadow-sm hover:shadow-lg text-slate-100 hover:text-slate-500 hover:border-slate-800 focus:text-white  focus:border-slate-800  active:text-slate-500 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-          href="/Services"
+        </Link>
+        <Link
+          to="/services"
+          className="text-center text-1xl transition-all shadow-sm hover:shadow-lg text-slate-100 hover:text-slate-500 hover:border-slate-800 focus:text-white focus:border-slate-800 active:text-slate-500 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
         >
           What We Do
-        </a>
-
-        <a
-          className="text-center text-1xl transition-all shadow-sm hover:shadow-lg text-slate-100 hover:text-slate-500 hover:border-slate-800 focus:text-white  focus:border-slate-800  active:text-slate-500 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-          href="/Contact"
+        </Link>
+        <Link
+          to="/contact"
+          className="text-center text-1xl transition-all shadow-sm hover:shadow-lg text-slate-100 hover:text-slate-500 hover:border-slate-800 focus:text-white focus:border-slate-800 active:text-slate-500 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
         >
           Contact Us
-        </a>
+        </Link>
       </nav>
     </header>
   );

@@ -1,64 +1,76 @@
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 function Downbar() {
   return (
     <>
-      <div className="container mx-auto  text-white">
+      <div className="container mx-auto text-white">
         <div className="flex gap-4 w-1">
           <div className="flex-col m-10">
             <motion.h1
-             initial={{ y: 100, opacity: 0 }}
-             whileInView={{ opacity: 1, y: 0 }} // الحركة تحدث عندما يكون العنصر في مجال الرؤية
-             transition={{ duration: 1 }}
-             viewport={{ once: false }}
-             className="mb-2 font-bold">KSA</motion.h1>
-            <motion.h1
-             initial={{ y: 100, opacity: 0 }}
-             whileInView={{ opacity: 1, y: 0 }} // الحركة تحدث عندما يكون العنصر في مجال الرؤية
-             transition={{ duration: 1 }}
-             viewport={{ once: false }}
+              initial={{ y: 100, opacity: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
+              viewport={{ once: false }}
+              className="mb-2 font-bold"
             >
-              Jeddah,Saudi Arabia 
+              KSA
             </motion.h1>
             <motion.h1
-             initial={{ y: 100, opacity: 0 }}
-             whileInView={{ opacity: 1, y: 0 }} // الحركة تحدث عندما يكون العنصر في مجال الرؤية
-             transition={{ duration: 1 }}
-             viewport={{ once: false }}
-            >Summit Center for Business
-            Administration</motion.h1>
+              initial={{ y: 100, opacity: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
+              viewport={{ once: false }}
+            >
+              Jeddah, Saudi Arabia
+            </motion.h1>
             <motion.h1
-             initial={{ y: 100, opacity: 0 }}
-             whileInView={{ opacity: 1, y: 0 }} // الحركة تحدث عندما يكون العنصر في مجال الرؤية
-             transition={{ duration: 1 }}
-             viewport={{ once: false }}
-            >Aziziyah</motion.h1>
+              initial={{ y: 100, opacity: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
+              viewport={{ once: false }}
+            >
+              Summit Center for Business Administration
+            </motion.h1>
+            <motion.h1
+              initial={{ y: 100, opacity: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
+              viewport={{ once: false }}
+            >
+              Aziziyah
+            </motion.h1>
 
             <br />
             <motion.h1
-             initial={{ y: 100, opacity: 0 }}
-             whileInView={{ opacity: 1, y: 0 }} // الحركة تحدث عندما يكون العنصر في مجال الرؤية
-             transition={{ duration: 1 }}
-             viewport={{ once: false }}
-            >+966920011854</motion.h1>
+              initial={{ y: 100, opacity: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
+              viewport={{ once: false }}
+            >
+              +966920011854
+            </motion.h1>
             <motion.h1
-            initial={{ y: 100, opacity: 0 }}
-            whileInView={{ opacity: 1, y: 0 }} // الحركة تحدث عندما يكون العنصر في مجال الرؤية
-            transition={{ duration: 1 }}
-            viewport={{ once: false }}
-            >support@kartngo.co</motion.h1>
+              initial={{ y: 100, opacity: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
+              viewport={{ once: false }}
+            >
+              support@kartngo.co
+            </motion.h1>
             <motion.h1
-            initial={{ y: 100, opacity: 0 }}
-            whileInView={{ opacity: 1, y: 0 }} // الحركة تحدث عندما يكون العنصر في مجال الرؤية
-            transition={{ duration: 1 }}
-            viewport={{ once: false }}
-
-             className="mb-2">info@kartngo.co</motion.h1>
-             
+              initial={{ y: 100, opacity: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
+              viewport={{ once: false }}
+              className="mb-2"
+            >
+              info@kartngo.co
+            </motion.h1>
 
             <div className="flex">
               <button
-                className="mr-1 rounded-md bg-[#25D366] py-2 px-2.5 border border-transparent text-center text-sm  transition-all shadow-sm hover:shadow-lg focus:bg-[#25D366]/90 focus:shadow-none active:bg-[#25D366]/90 hover:bg-[#25D366]/90 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                className="mr-1 rounded-md bg-[#25D366] py-2 px-2.5 border border-transparent text-center text-sm transition-all shadow-sm hover:shadow-lg focus:bg-[#25D366]/90 focus:shadow-none active:bg-[#25D366]/90 hover:bg-[#25D366]/90 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                 type="button"
               >
                 <i className="fab fa-whatsapp w-4 h-4" aria-hidden="true"></i>
@@ -75,50 +87,46 @@ function Downbar() {
               >
                 <i className="fab fa-x-twitter w-4 h-4" aria-hidden="true"></i>
               </button>
-              <div className="flex gap-5 ml-40 ">
-              <motion.button
-                initial={{  opacity: 0 }}
-                whileInView={{ opacity: 1, y: 0 }} // الحركة تحدث عندما يكون العنصر في مجال الرؤية
-                transition={{ duration: 1 }}
-                viewport={{ once: false }}
-                  className="rounded-md w-80 py-2 px-4 text-center text-2xl transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:border-slate-800 focus:text-white  focus:border-slate-800  active:text-white disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+              <div className="flex gap-5 ml-40">
+                <motion.button
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1 }}
+                  viewport={{ once: false }}
+                  className="rounded-md w-80 py-2 px-4 text-center text-2xl transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:border-slate-800 focus:text-white focus:border-slate-800 active:text-white disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                   type="button"
                 >
-                  <a href="/">Home</a>
-                  
+                  <Link to="/">Home</Link>
                 </motion.button>
                 <motion.button
-                initial={{  opacity: 0 }}
-                whileInView={{ opacity: 1, y: 0 }} // الحركة تحدث عندما يكون العنصر في مجال الرؤية
-                transition={{ duration: 1 }}
-                viewport={{ once: false }}
-                  className="rounded-md w-80 py-2 px-4 text-center text-2xl transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:border-slate-800 focus:text-white  focus:border-slate-800  active:text-white disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1 }}
+                  viewport={{ once: false }}
+                  className="rounded-md w-80 py-2 px-4 text-center text-2xl transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:border-slate-800 focus:text-white focus:border-slate-800 active:text-white disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                   type="button"
                 >
-                  <a href="/About">Who we are </a>
-                  
+                  <Link to="/about">Who we are</Link>
                 </motion.button>
                 <motion.button
-                initial={{  opacity: 0 }}
-                whileInView={{ opacity: 1, y: 0 }} // الحركة تحدث عندما يكون العنصر في مجال الرؤية
-                transition={{ duration: 1 }}
-                viewport={{ once: false }}
-                  className="rounded-md w-80 py-2 px-4 text-center text-2xl transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:border-slate-800 focus:text-white  focus:border-slate-800  active:text-white disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1 }}
+                  viewport={{ once: false }}
+                  className="rounded-md w-80 py-2 px-4 text-center text-2xl transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:border-slate-800 focus:text-white focus:border-slate-800 active:text-white disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                   type="button"
                 >
-                  <a href="/Services">What we Do</a>
-                  
+                  <Link to="/services">What we Do</Link>
                 </motion.button>
                 <motion.button
-                initial={{  opacity: 0 }}
-                whileInView={{ opacity: 1, y: 0 }} // الحركة تحدث عندما يكون العنصر في مجال الرؤية
-                transition={{ duration: 1 }}
-                viewport={{ once: false }}
-                  className="rounded-md w-80 py-2 px-4 text-center text-2xl transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:border-slate-800 focus:text-white  focus:border-slate-800  active:text-white disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1 }}
+                  viewport={{ once: false }}
+                  className="rounded-md w-80 py-2 px-4 text-center text-2xl transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:border-slate-800 focus:text-white focus:border-slate-800 active:text-white disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                   type="button"
                 >
-                  <a href="/Contact">Contact Us</a>
-                  
+                  <Link to="/contact">Contact Us</Link>
                 </motion.button>
               </div>
             </div>

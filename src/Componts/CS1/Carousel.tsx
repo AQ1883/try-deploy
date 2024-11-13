@@ -1,5 +1,6 @@
 import { Carousel, Typography, Button } from "@material-tailwind/react";
 import { motion } from "framer-motion";
+import { Link } from 'react-scroll'; // استيراد Link من react-scroll
 
 export function CarouselWithContent() {
   return (
@@ -18,14 +19,14 @@ export function CarouselWithContent() {
               className="mb-4 text-3xl md:text-4xl lg:text-5xl"
             >
                <motion.div
-            initial={{ y: 100, opacity: 0 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-            viewport={{ once: false }}
-            id="stroke2"
-          >
-            Kart<span>N</span>Go
-          </motion.div>
+                 initial={{ y: 100, opacity: 0 }}
+                 whileInView={{ opacity: 1, y: 0 }}
+                 transition={{ duration: 1 }}
+                 viewport={{ once: false }}
+                 id="stroke2"
+               >
+                 Kart<span>N</span>Go
+               </motion.div>
             </Typography>
             <Typography
               variant="lead"
@@ -40,15 +41,17 @@ export function CarouselWithContent() {
               at any time.
             </Typography>
             <div className="flex justify-center gap-2">
-              <a href="#screen2">
+              {/* استخدام Link من react-scroll هنا */}
+              <Link to="screen2" smooth={true} duration={500}>
                 <Button size="lg" color="white">
                   MORE
                 </Button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
       </div>
+      {/* تكرار نفس النمط للصور المتبقية */}
       <div className="relative h-full w-full">
         <img
           src="https://safainv.sa/storage/2024-10-12/nfzhqcQweAAXMIXFMoTV0oKDBZIPzMqjd0dGTF92.jpg"
@@ -62,12 +65,9 @@ export function CarouselWithContent() {
               color="white"
               className="mb-4 text-3xl md:text-4xl lg:text-5xl"
             >
-               <div
-            
-            id="stroke2"
-          >
-            Kart<span>N</span>Go
-          </div>
+               <div id="stroke2">
+                 Kart<span>N</span>Go
+               </div>
             </Typography>
             <Typography
               variant="lead"
@@ -82,18 +82,18 @@ export function CarouselWithContent() {
               at any time.
             </Typography>
             <div className="flex justify-center gap-2">
-              <a href="#screen2">
+              <Link to="screen2" smooth={true} duration={500}>
                 <Button size="lg" color="white">
                   MORE
                 </Button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
       </div>
       <div className="relative h-full w-full">
         <img
-          src="src\assets\img.jpg"
+          src="src/assets/img.jpg"
           alt="image 3"
           className="h-full w-full object-cover"
         />
@@ -104,12 +104,9 @@ export function CarouselWithContent() {
               color="white"
               className="mb-4 text-3xl md:text-4xl lg:text-5xl"
             >
-               <div
-            
-            id="stroke2"
-          >
-            Kart<span>N</span>Go
-          </div>
+               <div id="stroke2">
+                 Kart<span>N</span>Go
+               </div>
             </Typography>
             <Typography
               variant="lead"
@@ -124,11 +121,11 @@ export function CarouselWithContent() {
               at any time.
             </Typography>
             <div className="flex justify-center gap-2">
-              <a href="#screen2">
+              <Link to="screen2" smooth={true} duration={500}>
                 <Button size="lg" color="white">
                   MORE
                 </Button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
