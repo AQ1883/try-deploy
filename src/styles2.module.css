@@ -1,0 +1,78 @@
+.background {
+  background: black;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.scrollText {
+  font-size: 1.5rem;
+}
+
+.card {
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem;
+  width: 35%;
+  
+  
+}
+
+.parallax {
+  margin-right: 10%;
+  /* إخفاء شريط التمرير مع السماح بالتمرير */
+  overflow: scroll;
+}
+
+.parallax::-webkit-scrollbar {
+  display: none; /* إخفاء شريط التمرير في المتصفحات التي تدعم WebKit (مثل Chrome و Safari) */
+}
+
+.parallax {
+  -ms-overflow-style: none; /* إخفاء شريط التمرير في Internet Explorer 10+ */
+  scrollbar-width: none; /* إخفاء شريط التمرير في Firefox */
+}
+
+.sticky {
+  margin-left: 10%;
+  color: white;
+  font-size: 6.5rem;
+  font-weight: 700;
+}
+
+.blue {
+  background-color: #5b65ad;
+  color: white;
+}
+
+.purple {
+  color: white;
+}
+
+.purple h1 {
+  font-size: 6.5rem;
+  text-align: start;
+  font-weight: 700;
+  
+
+}
+
+
+
+@media (max-width: 750px) {
+  .card {
+    width: 40%;
+  }
+
+  .parallax {
+    margin-right: 1.5rem;
+  }
+
+  .sticky {
+    margin-left: 1.5rem;
+  }
+}
