@@ -54,7 +54,7 @@ export function CarouselWithContent() {
       {/* تكرار نفس النمط للصور المتبقية */}
       <div className="relative h-full w-full">
         <img
-          src="https://safainv.sa/storage/2024-10-12/nfzhqcQweAAXMIXFMoTV0oKDBZIPzMqjd0dGTF92.jpg"
+          src="https://pbs.twimg.com/media/GZjt0_CW0AAtEZM?format=jpg&name=large"
           alt="image 2"
           className="h-full w-full object-cover"
         />
